@@ -91,7 +91,7 @@ def load_model_info(subject, xfm=None, model_type='tikreg', verbose=True, **kwar
 
     if verbose:
         print("Loading story and movie weights from: {}".format(model_type))
-    if model_type='tikreg':
+    if model_type=='tikreg':
         swt, mwt = load_tikreg_weights(sub, **kwargs)
     else:
         raise NotImplementedError
