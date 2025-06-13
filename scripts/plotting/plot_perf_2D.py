@@ -10,7 +10,7 @@ cci = cc.get_interface(CC_INTERFACE, verbose=False)
 
 if len(sys.argv)>1 and (sys.argv[1] in SUBJECTS):
     subjects = [sys.argv[1]]
-    print("Got subject from command line: {}".format(subject))
+    print("Got subject from command line: {}".format(subjects))
 else:
     print("No subject provided... creating all plots")
     subjects = SUBJECTS
